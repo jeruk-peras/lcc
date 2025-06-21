@@ -11,4 +11,9 @@ class KaryawanController extends BaseController
     {
         return view('karyawan/index');
     }
+
+    public function add()
+    {
+        return view('karyawan/add');
+    }
 }

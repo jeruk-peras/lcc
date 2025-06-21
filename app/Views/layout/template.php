@@ -56,7 +56,7 @@
 
             <!-- content -->
             <?= $this->renderSection('content'); ?>
-            <!-- end     content -->
+            <!-- end  content -->
 
             <footer class="footer">
                 <div class="container-fluid d-flex justify-content-between">
