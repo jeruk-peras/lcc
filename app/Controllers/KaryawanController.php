@@ -42,6 +42,17 @@ class KaryawanController extends BaseController
     public function save(){
         $arraypost = $this->request->getPost(); // menangkap data post
 
+        // set rules
+        $this->validation->setRules($this->setRules);
+        // menjalankan validasi
+        $isValid = $this->validation->run($arraypost);
+
+        // jika gagal
+        if(!$isValid){
+            // kembali kelahaman sebelumnya
+            return redirect()->back()->withInput();
+        }
+
         // setup insert data
         $data = [
             'nama_karyawan' => $arraypost['nama_karyawan'],
