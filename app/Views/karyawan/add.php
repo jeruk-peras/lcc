@@ -30,74 +30,74 @@
                     <div class="card-header">
                         <div class="card-title">Form Karyawan</div>
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            
-                            <div class="col-md-12 col-lg-12">
-                                <div class="form-group">
-                                    <label>Nama Karyawan <span class="text-danger">*</span></label>
-                                    <input type="text" name="nama_karyawan" class="form-control" placeholder="Nama Karyawan" />
-                                </div>
-                            </div>
+                    <form action="" method="post">
+                        <div class="card-body">
+                            <div class="row">
 
-                            <div class="col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label>Nomor Telepon <span class="text-danger">*</span></label>
-                                    <input type="text" name="no_telepon" class="form-control" placeholder="Nomor Telepon" />
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label>Nama Karyawan <span class="text-danger">*</span></label>
+                                        <input type="text" name="nama_karyawan" class="form-control" placeholder="Nama Karyawan" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label>Email <span class="text-danger">*</span></label>
-                                    <input type="email" name="email" class="form-control" placeholder="Email" />
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Nomor Telepon <span class="text-danger">*</span></label>
+                                        <input type="text" name="no_telepon" class="form-control" placeholder="Nomor Telepon" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-12 col-lg-12">
-                                <div class="form-group">
-                                    <label>Alamat <span class="text-danger">*</span></label>
-                                    <textarea name="alamat" class="form-control" rows="4" id=""></textarea>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Email <span class="text-danger">*</span></label>
+                                        <input type="email" name="email" class="form-control" placeholder="Email" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label>Username <span class="text-danger">*</span></label>
-                                    <input type="text" name="username" class="form-control" placeholder="username" />
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label>Alamat <span class="text-danger">*</span></label>
+                                        <textarea name="alamat" class="form-control" rows="4" id=""></textarea>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label>Role <span class="text-danger">*</span></label>
-                                    <select name="role" class="form-control" id="">
-                                        <option value="">-- Pilih --</option>
-                                        <option value="Admin">Admin</option>
-                                        <option value="Kasir">Kasir</option>
-                                    </select>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Username <span class="text-danger">*</span></label>
+                                        <input type="text" name="username" class="form-control" placeholder="username" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label>Password <span class="text-danger">*</span></label>
-                                    <input type="password" name="password" class="form-control" placeholder="password" />
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Role <span class="text-danger">*</span></label>
+                                        <select name="role" class="form-select" id="">
+                                            <option value="" hidden>-- Pilih --</option>
+                                            <option value="Admin">Admin</option>
+                                            <option value="Kasir">Kasir</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label>Confirm Password <span class="text-danger">*</span></label>
-                                    <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" />
-                                </div>
-                            </div>
 
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Password <span class="text-danger">*</span></label>
+                                        <input type="password" name="password" class="form-control" placeholder="password" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Confirm Password <span class="text-danger">*</span></label>
+                                        <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-action">
-                        <button class="btn btn-success">Submit</button>
-                        <button class="btn btn-danger">Cancel</button>
-                    </div>
+                        <div class="card-action">
+                            <button type="submit" class="btn btn-primary">Simpan Data</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

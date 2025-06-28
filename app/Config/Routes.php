@@ -14,3 +14,4 @@ $routes->get("/contac", "PagesController::contac");
 // karyawan
 $routes->get('/karyawan', 'KaryawanController::index');
 $routes->get('/karyawan/add', 'KaryawanController::add');
+$routes->post('/karyawan/add', 'KaryawanController::save');
