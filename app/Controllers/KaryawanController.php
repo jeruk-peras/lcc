@@ -9,10 +9,24 @@ use CodeIgniter\HTTP\ResponseInterface;
 class KaryawanController extends BaseController
 {
     protected $ModelKaryawan;
+    protected $validation;
+
+    protected $setRules = [
+        'nama_karyawan' => 'required|max_length[100]',
+        'no_telepon' => 'required|numeric|max_length[15]',
+        'email' => 'required|valid_email|max_length[100]',
+        'alamat' => 'required|max_length[200]',
+        'username' => 'required|max_length[50]',
+        'password' => 'required|max_length[50]',
+        'role' => 'required',
+    ];
 
     public function __construct()
     {
+        // load model karyawan
         $this->ModelKaryawan = new KaryawanModel();
+        // load lib validation
+        $this->validation = \Config\Services::validation(); 
     }
 
     public function index()
